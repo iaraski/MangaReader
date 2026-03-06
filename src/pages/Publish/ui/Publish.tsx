@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 
-export default function Register() {
+export default function Publish() {
   return (
     <Box>
-      <p>register</p>
+      <p>Login</p>
     </Box>
   );
 }

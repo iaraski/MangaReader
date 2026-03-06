@@ -13,7 +13,7 @@ export default function Navbar() {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingInline: 2,
+        paddingInline: 4,
         paddingTop: 3,
       }}
     >
@@ -29,16 +29,16 @@ export default function Navbar() {
         </NavLink>
       </Box>
       <Box sx={{ display: 'flex', gap: 4 }}>
-        <NavLink to='/Login'>
+        <NavLink to='/Publish'>
           <Button
             variant='outlined'
             sx={{ backgroundColor: theme.palette.text.primary, paddingInline: 4 }}
           >
-            Вход
+            Добавить тайтл
           </Button>
         </NavLink>
-        <NavLink to='/Register'>
-          <Button>Регистрация</Button>
+        <NavLink to='/Login'>
+          <Button>Вход</Button>
         </NavLink>
         <Button sx={{ '&:focus': { outline: 'none', border: 'none' } }} onClick={() => toggle()}>
           {mode === 'dark' ? <SunnyIcon /> : <MoonIcon />}
